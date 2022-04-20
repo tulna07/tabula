@@ -1,0 +1,72 @@
+/**
+  * Footer
+  */
+.footer {
+  background: url("../images/footer_background.jpg") center / cover no-repeat;
+
+  font-size: 1.3rem;
+  color: #fff;
+
+  // Footer header each column
+  &-header {
+    margin-bottom: 2.6rem;
+
+    font : {
+      weight: 700;
+      size: 2.3rem;
+    }
+  }
+
+  // 1st column: contact
+  &-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-bottom: 2.2rem;
+
+    i {
+      margin-right: 1rem;
+    }
+  }
+
+  &-contact-medias {
+    display: flex;
+    gap: 2rem;
+
+    &__link {
+      color: #fff;
+      font-size: 1.3rem;
+
+      transition: color 0.3s;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  // 2nd, 3rd column: links
+  &-links {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      li {
+        padding-bottom: 0.8rem;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &__item {
+      color: #fff;
+
+      transition: color 0.3s;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}

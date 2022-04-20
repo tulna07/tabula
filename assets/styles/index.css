@@ -1,0 +1,116 @@
+/* Base */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/**
+  * General
+  */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid {
+  padding: 0 3rem;
+}
+
+/* Layouts */
+/**
+  * Footer
+  */
+.footer {
+  background: url("../images/footer_background.jpg") center/cover no-repeat;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.footer-header {
+  margin-bottom: 2.6rem;
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+.footer-contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.2rem;
+}
+
+.footer-contact-list i {
+  margin-right: 1rem;
+}
+
+.footer-contact-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-contact-medias__link {
+  color: #fff;
+  font-size: 1.3rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer-contact-medias__link:hover {
+  color: #000;
+}
+
+.footer-links-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-links-list li {
+  padding-bottom: 0.8rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-links__item {
+  color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer-links__item:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+/*# sourceMappingURL=index.css.map */
