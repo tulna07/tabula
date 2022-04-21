@@ -43,14 +43,62 @@
     <link rel="stylesheet" href="assets/styles/index.css" />
   </head>
   <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <a class="header__logo-link" href="#"
+            ><img src="assets/images/crest.png" alt="header logo"
+          /></a>
+          <div class="header-right">
+            <nav class="header-nav">
+              <ul class="header-nav-menu text-capitalize">
+                <li><a class="header-nav-menu__link" href="#">Home</a></li>
+                <li><a class="header-nav-menu__link" href="#">About</a></li>
+                <li><a class="header-nav-menu__link" href="#">Courses</a></li>
+                <li><a class="header-nav-menu__link" href="#">Blog</a></li>
+                <li><a class="header-nav-menu__link" href="#">Shop</a></li>
+                <li><a class="header-nav-menu__link" href="#">Elements</a></li>
+              </ul>
+            </nav>
+            <button class="btn btn-custom text-uppercase">
+              (+1) 555 234-8765
+            </button>
+            <ul class="footer-contact-medias">
+              <li>
+                <a href="#" class="footer-contact-medias__link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-contact-medias__link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-contact-medias__link">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-contact-medias__link">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Sections -->
     <main></main>
 
     <footer class="footer">
       <div class="container-fluid">
         <div class="row">
           <!-- Footer column 1 -->
-          <div class="col-lg-3">
-            <div class="footer-contact">
+          <div class="col-lg-3 col-6">
+            <div class="footer-col footer-col-1 footer-contact">
               <h3 class="footer-header">Contact us</h3>
               <ul class="footer-contact-list">
                 <li>
@@ -87,8 +135,8 @@
             </div>
           </div>
           <!-- Footer column 2 -->
-          <div class="col-lg-3">
-            <div class="footer-links">
+          <div class="col-lg-3 col-6">
+            <div class="footer-col footer-col-2 footer-links">
               <h3 class="footer-header text-capitalize">Quick Links</h3>
               <ul class="footer-links-list text-capitalize">
                 <li><a class="footer-links__item" href="#">Home</a></li>
@@ -99,8 +147,8 @@
             </div>
           </div>
           <!-- Footer column 3 -->
-          <div class="col-lg-3">
-            <div class="footer-links">
+          <div class="col-lg-3 col-6">
+            <div class="footer-col footer-col-3 footer-links">
               <h3 class="footer-header text-capitalize">About</h3>
               <ul class="footer-links-list text-capitalize">
                 <li><a class="footer-links__item" href="#">About Us</a></li>
@@ -108,6 +156,22 @@
                 <li><a class="footer-links__item" href="#">Get Quote</a></li>
                 <li><a class="footer-links__item" href="#">Contact</a></li>
               </ul>
+            </div>
+          </div>
+          <!-- Footer column 4 -->
+          <div class="col-lg-3 col-6">
+            <div class="footer-col footer-col-4 footer-newsletter">
+              <h3 class="footer-header text-capitalize">Newsletter</h3>
+              <form action="/">
+                <input
+                  class="footer-input-email text-center"
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Your email"
+                /><br />
+                <button class="btn btn-custom text-uppercase">SUBSCRIBE</button>
+              </form>
             </div>
           </div>
         </div>

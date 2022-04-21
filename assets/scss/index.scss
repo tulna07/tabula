@@ -1,7 +1,14 @@
+/* abstracts */
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
 /* Base */
 @import "base/reset";
 @import "base/general";
 
+/* Components */
+@import "components/buttons";
+
 /* Layouts */
+@import "layouts/header";
 @import "layouts/footer";

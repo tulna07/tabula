@@ -1,11 +1,17 @@
+// @mixin responsive($breakpoint) {
+//   @if $breakpoint == $xs {
+//     @media only screen and (max-width: $breakpoint) {
+//       @content;
+//     }
+//   } @else {
+//     @media only screen and (min-width: $breakpoint) {
+//       @content;
+//     }
+//   }
+// }
+
 @mixin responsive($breakpoint) {
-  @if $breakpoint == $sm {
-    @media only screen and (max-width: $breakpoint) {
-      @content;
-    }
-  } @else {
-    @media only screen and (min-width: $breakpoint) {
-      @content;
-    }
+  @media only screen and (max-width: $breakpoint) {
+    @content;
   }
 }
