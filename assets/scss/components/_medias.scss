@@ -1,15 +1,21 @@
+/**
+  * Medias Components
+  *
+  **********************************************/
 .medias {
   display: flex;
   gap: 1.6rem;
 
   &__link {
-    color: #fff;
     font-size: 1.3rem;
-
     transition: color 0.3s;
 
-    &:hover {
-      color: #000;
+    &--header {
+      @include mediasStyle($text-color: #000, $hover-color: $primary-color);
+    }
+
+    &--footer {
+      @include mediasStyle($text-color: #fff, $hover-color: #000);
     }
   }
 }

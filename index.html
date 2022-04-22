@@ -46,7 +46,7 @@
     <!-- Header -->
     <header class="header">
       <div class="container-fluid">
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-between">
           <a class="header__logo-link" href="#"
             ><img src="assets/images/crest.png" alt="header logo"
           /></a>
@@ -61,28 +61,32 @@
                 <li><a class="header-nav-menu__link" href="#">Elements</a></li>
               </ul>
             </nav>
-            <button class="btn btn-custom text-uppercase">
+            <a
+              href="#"
+              class="btn btn-custom btn-custom--primary text-uppercase"
+            >
+              <i class="fa-solid fa-phone-flip"></i>
               (+1) 555 234-8765
-            </button>
-            <ul class="footer-contact-medias">
+            </a>
+            <ul class="medias">
               <li>
-                <a href="#" class="footer-contact-medias__link">
+                <a href="#" class="medias__link medias__link--header">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="#" class="footer-contact-medias__link">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-contact-medias__link">
+                <a href="#" class="medias__link medias__link--header">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
               <li>
-                <a href="#" class="footer-contact-medias__link">
+                <a href="#" class="medias__link medias__link--header">
                   <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="medias__link medias__link--header">
+                  <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
             </ul>
@@ -90,9 +94,182 @@
         </div>
       </div>
     </header>
-    <!-- Main Sections -->
-    <main></main>
 
+    <!-- Main Sections -->
+    <main>
+      <!-- About Us Section  -->
+      <section class="about-us">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3 class="about-us__subheading text-uppercase">ABOUT US</h3>
+              <h1 class="about-us__heading">The language teaching experts</h1>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="assets/images/hero_team.png"
+                alt="hero team"
+                class="about-us__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experts Section -->
+      <section class="experts">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <div class="experts-item text-center">
+                <div class="experts__img-box">
+                  <img
+                    class="experts__img"
+                    src="assets/images/teacher_1.jpg"
+                    alt="teacher 1"
+                  />
+                </div>
+                <div class="experts-body">
+                  <h4 class="experts__nationality text-uppercase">ITALIAN</h4>
+                  <h3 class="experts__name text-capitalize">July Roberts</h3>
+                  <p class="experts__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="experts-item text-center">
+                <div class="experts__img-box">
+                  <img
+                    class="experts__img"
+                    src="assets/images/teacher_2.jpg"
+                    alt="teacher 2"
+                  />
+                </div>
+                <div class="experts-body">
+                  <h4 class="experts__nationality text-uppercase">FRENCH</h4>
+                  <h3 class="experts__name text-capitalize">Jon Stone</h3>
+                  <p class="experts__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="experts-item text-center">
+                <div class="experts__img-box">
+                  <img
+                    class="experts__img"
+                    src="assets/images/teacher_3.jpg"
+                    alt="teacher 3"
+                  />
+                </div>
+                <div class="experts-body">
+                  <h4 class="experts__nationality text-uppercase">JAPANESE</h4>
+                  <h3 class="experts__name text-capitalize">Emma Stone</h3>
+                  <p class="experts__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="experts-item text-center">
+                <div class="experts__img-box">
+                  <img
+                    class="experts__img"
+                    src="assets/images/teacher_4.jpg"
+                    alt="teacher 4"
+                  />
+                </div>
+                <div class="experts-body">
+                  <h4 class="experts__nationality text-uppercase">CHINESE</h4>
+                  <h3 class="experts__name text-capitalize">Mark Lee</h3>
+                  <p class="experts__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="experts-item text-center">
+                <div class="experts__img-box">
+                  <img
+                    class="experts__img"
+                    src="assets/images/teacher_5.jpg"
+                    alt="teacher 5"
+                  />
+                </div>
+                <div class="experts-body">
+                  <h4 class="experts__nationality text-uppercase">RUSSIAN</h4>
+                  <h3 class="experts__name text-capitalize">John Doe</h3>
+                  <p class="experts__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="experts-item text-center">
+                <div class="experts__img-box">
+                  <img
+                    class="experts__img"
+                    src="assets/images/teacher_6.jpg"
+                    alt="teacher 6"
+                  />
+                </div>
+                <div class="experts-body">
+                  <h4 class="experts__nationality text-uppercase">SWEDEN</h4>
+                  <h3 class="experts__name text-capitalize">Jane Smith</h3>
+                  <p class="experts__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="experts-item text-center">
+                <div class="experts__img-box">
+                  <img
+                    class="experts__img"
+                    src="assets/images/teacher_7.jpg"
+                    alt="teacher 7"
+                  />
+                </div>
+                <div class="experts-body">
+                  <h4 class="experts__nationality text-uppercase">SPANISH</h4>
+                  <h3 class="experts__name text-capitalize">Hanna Alverez</h3>
+                  <p class="experts__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="experts-item text-center">
+                <div class="experts__img-box">
+                  <img
+                    class="experts__img"
+                    src="assets/images/teacher_8.jpg"
+                    alt="teacher 8"
+                  />
+                </div>
+                <div class="experts-body">
+                  <h4 class="experts__nationality text-uppercase">ITALIAN</h4>
+                  <h3 class="experts__name text-capitalize">July Roberts</h3>
+                  <p class="experts__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="container-fluid">
         <div class="row">
@@ -110,24 +287,24 @@
                   <i class="fa-solid fa-clock"></i> Monday - Friday: 8 AM - 5 PM
                 </li>
               </ul>
-              <ul class="footer-contact-medias">
+              <ul class="medias">
                 <li>
-                  <a href="#" class="footer-contact-medias__link">
+                  <a href="#" class="medias__link medias__link--footer">
                     <i class="fa-brands fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="footer-contact-medias__link">
+                  <a href="#" class="medias__link medias__link--footer">
                     <i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="footer-contact-medias__link">
+                  <a href="#" class="medias__link medias__link--footer">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="footer-contact-medias__link">
+                  <a href="#" class="medias__link medias__link--footer">
                     <i class="fa-brands fa-youtube"></i>
                   </a>
                 </li>

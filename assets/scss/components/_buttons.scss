@@ -1,4 +1,7 @@
-// Custom Button
+/**
+  * Custom Button
+  *
+  **********************************************/
 .btn-custom {
   font: {
     family: "Montserrat", sans-serif;
@@ -6,7 +9,7 @@
     weight: 600;
   }
 
-  padding: 1.3rem;
+  padding: 1.3rem 0;
 
   transition: box-shadow 0.3s, color 0.3s;
   letter-spacing: 0.08rem;

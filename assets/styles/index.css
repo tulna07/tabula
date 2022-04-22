@@ -1,5 +1,9 @@
-/* abstracts */
+/* Abstracts */
 /* Base */
+/**
+  * Reset
+  *
+  **********************************************/
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +13,7 @@
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 a:hover {
@@ -17,7 +22,8 @@ a:hover {
 
 /**
   * General
-  */
+  *
+  **********************************************/
 html {
   font-size: 62.5%;
 }
@@ -40,11 +46,15 @@ h6 {
 }
 
 /* Components */
+/**
+  * Custom Button
+  *
+  **********************************************/
 .btn-custom {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
-  padding: 1.3rem;
+  padding: 1.3rem 0;
   -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s, color 0.3s;
@@ -81,7 +91,50 @@ h6 {
   color: #fff;
 }
 
+/**
+  * Medias Components
+  *
+  **********************************************/
+.medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.medias__link {
+  font-size: 1.3rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.medias__link--header {
+  color: #000;
+}
+
+.medias__link--header:hover {
+  color: #b61983;
+}
+
+.medias__link--footer {
+  color: #fff;
+}
+
+.medias__link--footer:hover {
+  color: #000;
+}
+
 /* Layouts */
+/**
+  * Header
+  *
+  **********************************************/
+.header {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+}
+
 .header .row {
   margin: 0;
 }
@@ -100,12 +153,138 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
+  margin-right: 3rem;
+}
+
+.header-nav-menu__link {
+  color: #181818;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.header-nav-menu__link:hover {
+  color: #b61983;
+}
+
+.header .btn-custom {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 1.1rem 1.8rem;
+}
+
+/**
+  * About Us Section
+  *
+  **********************************************/
+.about-us {
+  padding: 6.5rem 0;
+  background: url("../images/yellow_top_wave_01.png") top/contain no-repeat, url("../images/Violet_top_left_wave.png") bottom/contain no-repeat;
+}
+
+.about-us__subheading {
+  margin-bottom: 1rem;
+  color: #b61983;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.about-us__heading {
+  font-size: 5.7rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-us__heading {
+    font-size: 4.8rem;
+  }
+}
+
+.about-us__img {
+  display: block;
+  width: 100%;
+}
+
+/**
+  * Experts Section
+  *
+  **********************************************/
+.experts {
+  padding: 4rem 0 0 0;
+  background: #dcd1f3 url("../images/Wave_White_bottom_right_shape_01.png") bottom/contain no-repeat;
+}
+
+.experts-item {
+  margin-bottom: 3.2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.experts-item:hover {
+  -webkit-box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.experts__img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.9s;
+  transition: -webkit-transform 0.9s;
+  transition: transform 0.9s;
+  transition: transform 0.9s, -webkit-transform 0.9s;
+}
+
+.experts__img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.experts__img-box {
+  overflow: hidden;
+}
+
+.experts-body {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.experts__nationality {
+  margin-bottom: 0.7rem;
+  color: #b61983;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.experts__name {
+  margin-bottom: 1.4rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.experts__description {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .experts .col-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 /**
   * Footer
-  */
+  *
+  **********************************************/
 .footer {
   padding: 12rem 0 21rem 0;
   background: url("../images/footer_background.jpg") center/cover no-repeat;
@@ -141,24 +320,6 @@ h6 {
 
 .footer-contact-list i {
   margin-right: 1rem;
-}
-
-.footer-contact-medias {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.6rem;
-}
-
-.footer-contact-medias__link {
-  color: #fff;
-  font-size: 1.3rem;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.footer-contact-medias__link:hover {
-  color: #000;
 }
 
 .footer-links-list {

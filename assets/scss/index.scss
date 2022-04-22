@@ -1,4 +1,4 @@
-/* abstracts */
+/* Abstracts */
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
@@ -8,7 +8,11 @@
 
 /* Components */
 @import "components/buttons";
+@import "components/medias";
 
 /* Layouts */
 @import "layouts/header";
+@import "layouts/about-us";
+@import "layouts/experts";
+@import "layouts/form";
 @import "layouts/footer";

@@ -1,21 +1,3 @@
-// @mixin responsive($breakpoint) {
-//   @if $breakpoint == $xs {
-//     @media only screen and (max-width: $breakpoint) {
-//       @content;
-//     }
-//   } @else {
-//     @media only screen and (min-width: $breakpoint) {
-//       @content;
-//     }
-//   }
-// }
-
-@mixin responsive($breakpoint) {
-  @media only screen and (max-width: $breakpoint) {
-    @content;
-  }
-}
-
 @mixin buttonStyle($text-color, $primary-color) {
   color: $text-color;
   border: 0.13rem solid $primary-color;
@@ -23,5 +5,19 @@
 
   &:hover {
     color: $primary-color;
+  }
+}
+
+@mixin mediasStyle($text-color, $hover-color) {
+  color: $text-color;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@mixin responsive($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
   }
 }
