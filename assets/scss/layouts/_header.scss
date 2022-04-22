@@ -1,4 +1,8 @@
 .header {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+
   .row {
     margin: 0;
   }
@@ -11,9 +15,32 @@
 
   &-nav-menu {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
+
+    margin-right: 3rem;
 
     &__link {
+      color: #181818;
+      font: {
+        size: 1.3rem;
+        weight: 600;
+        family: "Montserrat", sans-serif;
+      }
+
+      transition: color 0.3s;
+
+      &:hover {
+        color: $primary-color;
+      }
     }
+  }
+
+  .btn-custom {
+    font: {
+      size: 1.3rem;
+      weight: 500;
+    }
+
+    padding: 1.1rem 1.8rem;
   }
 }
