@@ -15,3 +15,13 @@
     @content;
   }
 }
+
+@mixin buttonStyle($text-color, $primary-color) {
+  color: $text-color;
+  border: 0.13rem solid $primary-color;
+  box-shadow: 0 0 0 2.7rem $primary-color inset;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
