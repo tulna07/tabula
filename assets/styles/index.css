@@ -218,7 +218,7 @@ h6 {
 }
 
 .experts-item {
-  margin-bottom: 3.2rem;
+  margin-bottom: 3rem;
   border-radius: 1rem;
   overflow: hidden;
   -webkit-transition: -webkit-box-shadow 0.5s;
@@ -279,6 +279,114 @@ h6 {
             flex: 0 0 100%;
     max-width: 100%;
   }
+}
+
+/**
+  * Contact Section
+  *
+  **********************************************/
+.contact {
+  padding: 7rem 0;
+  background: url("../images/accent_bottom_wave_01.png") bottom/contain no-repeat;
+}
+
+.contact__img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact__img {
+    margin-top: 5rem;
+    width: 70%;
+  }
+}
+
+.contact-form {
+  background-color: #fff;
+  width: 70%;
+  padding: 4rem 2.5rem 7rem;
+  -webkit-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-form {
+    margin-top: 5rem;
+    width: 100%;
+  }
+}
+
+.contact-form-title {
+  margin-bottom: 3.5rem;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-form-title {
+    font-size: 3rem;
+  }
+}
+
+.contact-form input,
+.contact-form select {
+  border-radius: 999px;
+  font-size: 1.2rem;
+}
+
+.contact-form input {
+  padding: 2rem 1rem 2rem 4rem;
+}
+
+.contact-form select {
+  padding: 1.3rem 4rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  padding: 1rem 1rem 1rem 4rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+}
+
+.contact-form .btn-custom {
+  margin-top: 3rem;
+  padding: 1.3rem 5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-form .btn-custom {
+    width: 100%;
+  }
+}
+
+.contact .form-group {
+  position: relative;
+}
+
+.contact .form-group-name > i, .contact .form-group-email > i, .contact .form-group-language > i {
+  color: #b61983;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contact .form-group-description i {
+  color: #b61983;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 17%;
+  left: 1.2rem;
+}
+
+.contact .form-control:focus {
+  border-color: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 0.05rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 0 0.05rem rgba(0, 0, 0, 0.15);
 }
 
 /**

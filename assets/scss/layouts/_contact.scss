@@ -1,0 +1,105 @@
+/**
+  * Contact Section
+  *
+  **********************************************/
+.contact {
+  padding: 7rem 0;
+  background: url("../images/accent_bottom_wave_01.png") bottom/ contain
+    no-repeat;
+
+  &__img {
+    width: 100%;
+
+    @include responsive($lg) {
+      margin-top: 5rem;
+      width: 70%;
+    }
+  }
+
+  &-form {
+    background-color: #fff;
+    width: 70%;
+    padding: 4rem 2.5rem 7rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+
+    @include responsive($lg) {
+      margin-top: 5rem;
+      width: 100%;
+    }
+
+    &-title {
+      margin-bottom: 3.5rem;
+      font: {
+        size: 4rem;
+        weight: 700;
+      }
+
+      @include responsive($lg) {
+        font-size: 3rem;
+      }
+    }
+
+    input,
+    select {
+      border-radius: 999px;
+      font-size: 1.2rem;
+    }
+
+    input {
+      padding: 2rem 1rem 2rem 4rem;
+    }
+
+    select {
+      padding: 1.3rem 4rem;
+      width: 100%;
+    }
+
+    textarea {
+      padding: 1rem 1rem 1rem 4rem;
+      font-size: 1.2rem;
+      border-radius: 2rem;
+    }
+
+    .btn-custom {
+      margin-top: 3rem;
+      padding: 1.3rem 5rem;
+
+      @include responsive($lg) {
+        width: 100%;
+      }
+    }
+  }
+
+  .form-group {
+    position: relative;
+
+    &-name,
+    &-email,
+    &-language {
+      > i {
+        color: $primary-color;
+        font-size: 1.5rem;
+
+        position: absolute;
+        top: 50%;
+        left: 1.5rem;
+        transform: translateY(-50%);
+      }
+    }
+
+    &-description i {
+      color: $primary-color;
+      font-size: 1.5rem;
+
+      position: absolute;
+      top: 17%;
+      left: 1.2rem;
+    }
+  }
+
+  .form-control:focus {
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 0.05rem rgba(0, 0, 0, 0.15);
+  }
+}
