@@ -3,11 +3,16 @@
   *
   **********************************************/
 .header {
-  position: fixed;
-  top: 0;
+  position: absolute;
   width: 100%;
   z-index: 999;
   background-color: transparent;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
   @include responsive($xl) {
     background-color: #fff;
@@ -29,6 +34,7 @@
 
       > i {
         margin-right: 2rem;
+        color: $primary-color;
         font: {
           size: 3.5rem;
           weight: 600;
@@ -39,6 +45,7 @@
 
   &__logo-link > img {
     max-width: 8rem;
+
     @include responsive($xl) {
       max-width: 5rem;
     }
@@ -56,6 +63,23 @@
 
     margin-right: 3rem;
 
+    li.active::after {
+      position: absolute;
+      top: 190%;
+      left: 50%;
+
+      display: block;
+
+      width: 1rem;
+      height: 1rem;
+
+      content: "";
+      transform: translateX(-50%);
+
+      border-radius: 50%;
+      background-color: $primary-color;
+    }
+
     &__link {
       color: #181818;
       font: {
@@ -68,6 +92,32 @@
 
       &:hover {
         color: $primary-color;
+      }
+    }
+
+    li {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 190%;
+        left: 50%;
+
+        display: block;
+
+        width: 1rem;
+        height: 1rem;
+
+        content: "";
+        transition: transform 0.3s;
+        transform: translateX(-50%) scale(0);
+
+        border-radius: 50%;
+        background-color: $primary-color;
+      }
+
+      &:hover::after {
+        transform: translateX(-50%) scale(1);
       }
     }
   }

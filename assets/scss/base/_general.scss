@@ -8,6 +8,19 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+
+  // Scrollbar custom
+  &::-webkit-scrollbar {
+    width: 1rem;
+
+    &-thumb {
+      background-color: $primary-color;
+
+      &:hover {
+        background-color: $darker-primary-color;
+      }
+    }
+  }
 }
 
 h1,

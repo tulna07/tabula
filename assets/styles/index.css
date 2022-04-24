@@ -32,6 +32,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b61983;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #940f65;
+}
+
 h1,
 h2,
 h3,
@@ -130,11 +142,16 @@ h6 {
   *
   **********************************************/
 .header {
-  position: fixed;
-  top: 0;
+  position: absolute;
   width: 100%;
   z-index: 999;
   background-color: transparent;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -167,6 +184,7 @@ h6 {
 
 .header-row-responsive > i {
   margin-right: 2rem;
+  color: #b61983;
   font-size: 3.5rem;
   font-weight: 600;
 }
@@ -199,6 +217,20 @@ h6 {
   margin-right: 3rem;
 }
 
+.header-nav-menu li.active::after {
+  position: absolute;
+  top: 190%;
+  left: 50%;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: #b61983;
+}
+
 .header-nav-menu__link {
   color: #181818;
   font-size: 1.3rem;
@@ -210,6 +242,33 @@ h6 {
 
 .header-nav-menu__link:hover {
   color: #b61983;
+}
+
+.header-nav-menu li {
+  position: relative;
+}
+
+.header-nav-menu li::after {
+  position: absolute;
+  top: 190%;
+  left: 50%;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateX(-50%) scale(0);
+          transform: translateX(-50%) scale(0);
+  border-radius: 50%;
+  background-color: #b61983;
+}
+
+.header-nav-menu li:hover::after {
+  -webkit-transform: translateX(-50%) scale(1);
+          transform: translateX(-50%) scale(1);
 }
 
 .header .btn-custom {
@@ -355,7 +414,7 @@ h6 {
 
 .contact-form {
   background-color: #fff;
-  width: 85%;
+  width: 80%;
   padding: 4rem 2.5rem 7rem;
   -webkit-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
@@ -395,6 +454,11 @@ h6 {
   padding: 1.3rem 4rem;
   width: 100%;
   border: 0.1rem solid #ced4da;
+}
+
+.contact-form select:focus {
+  border: 0.1rem solid #ced4da;
+  outline: none;
 }
 
 .contact-form textarea {
