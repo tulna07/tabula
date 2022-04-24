@@ -130,13 +130,55 @@ h6 {
   *
   **********************************************/
 .header {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 999;
   background-color: transparent;
 }
 
-.header .row {
+@media only screen and (max-width: 1200px) {
+  .header {
+    background-color: #fff;
+  }
+}
+
+.header-row {
   margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-row {
+    display: none;
+  }
+}
+
+.header-row-responsive {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-row-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header-row-responsive > i {
+  margin-right: 2rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.header__logo-link > img {
+  max-width: 8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header__logo-link > img {
+    max-width: 5rem;
+  }
 }
 
 .header-right {
@@ -301,9 +343,19 @@ h6 {
   }
 }
 
+.contact-col {
+  margin-left: 8.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-col {
+    margin-left: 0;
+  }
+}
+
 .contact-form {
   background-color: #fff;
-  width: 70%;
+  width: 85%;
   padding: 4rem 2.5rem 7rem;
   -webkit-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
@@ -342,6 +394,7 @@ h6 {
 .contact-form select {
   padding: 1.3rem 4rem;
   width: 100%;
+  border: 0.1rem solid #ced4da;
 }
 
 .contact-form textarea {
@@ -355,7 +408,7 @@ h6 {
   padding: 1.3rem 5rem;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .contact-form .btn-custom {
     width: 100%;
   }

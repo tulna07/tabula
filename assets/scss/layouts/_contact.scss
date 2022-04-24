@@ -16,9 +16,17 @@
     }
   }
 
+  &-col {
+    margin-left: 8.5rem;
+
+    @include responsive($lg) {
+      margin-left: 0;
+    }
+  }
+
   &-form {
     background-color: #fff;
-    width: 70%;
+    width: 85%;
     padding: 4rem 2.5rem 7rem;
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
@@ -53,6 +61,7 @@
     select {
       padding: 1.3rem 4rem;
       width: 100%;
+      border: 0.1rem solid #ced4da;
     }
 
     textarea {
@@ -65,7 +74,7 @@
       margin-top: 3rem;
       padding: 1.3rem 5rem;
 
-      @include responsive($lg) {
+      @include responsive($md) {
         width: 100%;
       }
     }

@@ -3,12 +3,45 @@
   *
   **********************************************/
 .header {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 999;
   background-color: transparent;
 
-  .row {
+  @include responsive($xl) {
+    background-color: #fff;
+  }
+
+  &-row {
     margin: 0;
+
+    @include responsive($xl) {
+      display: none;
+    }
+
+    &-responsive {
+      display: none;
+
+      @include responsive($xl) {
+        display: flex;
+      }
+
+      > i {
+        margin-right: 2rem;
+        font: {
+          size: 3.5rem;
+          weight: 600;
+        }
+      }
+    }
+  }
+
+  &__logo-link > img {
+    max-width: 8rem;
+    @include responsive($xl) {
+      max-width: 5rem;
+    }
   }
 
   &-right {
