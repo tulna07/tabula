@@ -286,11 +286,23 @@ h6 {
   background: url("../images/yellow_top_wave_01.png") top/contain no-repeat, url("../images/Violet_top_left_wave.png") bottom/contain no-repeat;
 }
 
+@media only screen and (max-width: 992px) {
+  .about-us {
+    padding: 12rem 0 0 0;
+  }
+}
+
 .about-us__subheading {
   margin-bottom: 1rem;
   color: #b61983;
   font-size: 1.7rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-us__subheading {
+    font-size: 1.5rem;
+  }
 }
 
 .about-us__heading {
@@ -307,6 +319,12 @@ h6 {
 .about-us__img {
   display: block;
   width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-us__img {
+    max-width: 60rem;
+  }
 }
 
 /**

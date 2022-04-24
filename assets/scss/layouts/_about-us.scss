@@ -7,6 +7,10 @@
   background: url("../images/yellow_top_wave_01.png") top / contain no-repeat,
     url("../images/Violet_top_left_wave.png") bottom / contain no-repeat;
 
+  @include responsive($lg) {
+    padding: 12rem 0 0 0;
+  }
+
   &__subheading {
     margin-bottom: 1rem;
 
@@ -14,6 +18,10 @@
     font: {
       size: 1.7rem;
       weight: 600;
+    }
+
+    @include responsive($xl) {
+      font-size: 1.5rem;
     }
   }
 
@@ -31,5 +39,9 @@
   &__img {
     display: block;
     width: 100%;
+
+    @include responsive($lg) {
+      max-width: 60rem;
+    }
   }
 }
