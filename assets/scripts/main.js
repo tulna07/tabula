@@ -1,3 +1,5 @@
+new WOW().init();
+
 const header = document.querySelector("header");
 const getElem = id => document.getElementById(id);
 
