@@ -1,7 +1,14 @@
-new WOW().init();
+import { getElem, renderHTML } from "./helpers/helper.js";
+import Service from "./services/service.js";
 
+new WOW().init();
+const service = new Service();
+
+/*
+ * Header handler
+ *
+ ********************************************************/
 const header = document.querySelector("header");
-const getElem = id => document.getElementById(id);
 
 window.onscroll = function () {
   if (window.innerWidth >= 1200) {
@@ -46,3 +53,17 @@ window.onresize = function () {
     getElem("header-logo").style.display = "none";
   }
 };
+
+/*
+ * Display experts section's content
+ *
+ ********************************************************/
+const displayExperts = () =>
+  service
+    .fetchData()
+    .then(response => {
+      const users = response.data;
+      renderHTML(users);
+    })
+    .catch(err => console.log(err));
+displayExperts();

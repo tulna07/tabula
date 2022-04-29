@@ -50,6 +50,17 @@
 
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/styles/index.css" />
+
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Main Scripts -->
+    <script type="module" src="assets/scripts/main.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -140,173 +151,7 @@
       <!-- Experts Section -->
       <section class="experts">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-3 col-6 wow animate__animated animate__fadeIn">
-              <div class="experts-item text-center">
-                <div class="experts__img-box">
-                  <img
-                    class="experts__img"
-                    src="assets/images/teacher_1.jpg"
-                    alt="teacher 1"
-                  />
-                </div>
-                <div class="experts-body">
-                  <h4 class="experts__nationality text-uppercase">ITALIAN</h4>
-                  <h3 class="experts__name text-capitalize">July Roberts</h3>
-                  <p class="experts__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-6 wow animate__animated animate__fadeIn"
-              data-wow-delay="0.1s"
-            >
-              <div class="experts-item text-center">
-                <div class="experts__img-box">
-                  <img
-                    class="experts__img"
-                    src="assets/images/teacher_2.jpg"
-                    alt="teacher 2"
-                  />
-                </div>
-                <div class="experts-body">
-                  <h4 class="experts__nationality text-uppercase">FRENCH</h4>
-                  <h3 class="experts__name text-capitalize">Jon Stone</h3>
-                  <p class="experts__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-6 wow animate__animated animate__fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <div class="experts-item text-center">
-                <div class="experts__img-box">
-                  <img
-                    class="experts__img"
-                    src="assets/images/teacher_3.jpg"
-                    alt="teacher 3"
-                  />
-                </div>
-                <div class="experts-body">
-                  <h4 class="experts__nationality text-uppercase">JAPANESE</h4>
-                  <h3 class="experts__name text-capitalize">Emma Stone</h3>
-                  <p class="experts__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-6 wow animate__animated animate__fadeIn"
-              data-wow-delay="0.3s"
-            >
-              <div class="experts-item text-center">
-                <div class="experts__img-box">
-                  <img
-                    class="experts__img"
-                    src="assets/images/teacher_4.jpg"
-                    alt="teacher 4"
-                  />
-                </div>
-                <div class="experts-body">
-                  <h4 class="experts__nationality text-uppercase">CHINESE</h4>
-                  <h3 class="experts__name text-capitalize">Mark Lee</h3>
-                  <p class="experts__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-6 wow animate__animated animate__fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <div class="experts-item text-center">
-                <div class="experts__img-box">
-                  <img
-                    class="experts__img"
-                    src="assets/images/teacher_5.jpg"
-                    alt="teacher 5"
-                  />
-                </div>
-                <div class="experts-body">
-                  <h4 class="experts__nationality text-uppercase">RUSSIAN</h4>
-                  <h3 class="experts__name text-capitalize">John Doe</h3>
-                  <p class="experts__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-6 wow animate__animated animate__fadeIn"
-              data-wow-delay="0.5s"
-            >
-              <div class="experts-item text-center">
-                <div class="experts__img-box">
-                  <img
-                    class="experts__img"
-                    src="assets/images/teacher_6.jpg"
-                    alt="teacher 6"
-                  />
-                </div>
-                <div class="experts-body">
-                  <h4 class="experts__nationality text-uppercase">SWEDEN</h4>
-                  <h3 class="experts__name text-capitalize">Jane Smith</h3>
-                  <p class="experts__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-6 wow animate__animated animate__fadeIn"
-              data-wow-delay="0.6s"
-            >
-              <div class="experts-item text-center">
-                <div class="experts__img-box">
-                  <img
-                    class="experts__img"
-                    src="assets/images/teacher_7.jpg"
-                    alt="teacher 7"
-                  />
-                </div>
-                <div class="experts-body">
-                  <h4 class="experts__nationality text-uppercase">SPANISH</h4>
-                  <h3 class="experts__name text-capitalize">Hanna Alverez</h3>
-                  <p class="experts__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-6 wow animate__animated animate__fadeIn"
-              data-wow-delay="0.7s"
-            >
-              <div class="experts-item text-center">
-                <div class="experts__img-box">
-                  <img
-                    class="experts__img"
-                    src="assets/images/teacher_8.jpg"
-                    alt="teacher 8"
-                  />
-                </div>
-                <div class="experts-body">
-                  <h4 class="experts__nationality text-uppercase">ITALIAN</h4>
-                  <h3 class="experts__name text-capitalize">July Roberts</h3>
-                  <p class="experts__description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="experts-table" class="row"></div>
         </div>
       </section>
 
@@ -516,7 +361,5 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
-    <script src="assets/scripts/main.js"></script>
   </body>
 </html>
